@@ -1,0 +1,35 @@
+.main{
+  background: url("/main_img.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: calc(100vh - 80px);
+  position: relative;
+}
+
+.main::after{
+  content: "";
+  width: 30000px;
+  height: 151px;
+  background: url("/main_divider.svg") no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.main div{
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.main h1 {
+  color: var(--color-base-01);
+  font-size: 40px;
+}
+
+.main span {
+  color: var(--color-contrast-01);
+}
