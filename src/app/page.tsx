@@ -1,16 +1,13 @@
-import style from './page.module.css';
+import { Benefits } from '@/components/home/Benefits';
+import { Main } from '@/components/home/Main';
+import { WorkoutCard } from '@/components/home/WorkoutCard';
 
 export default function Home() {
   return (
     <section>
-      <main className={style.main}>
-        <div className="container">
-          <h1>
-            <span>Treine</span> onde estiver
-          </h1>
-          <button>Saiba mais</button>
-        </div>
-      </main>
+      <Main />
+      <Benefits />
+      <WorkoutCard />
     </section>
   );
 }

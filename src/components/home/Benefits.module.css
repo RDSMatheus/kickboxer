@@ -1,0 +1,14 @@
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.grid p{
+  color: var(--color-base-10);
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.3;
+}

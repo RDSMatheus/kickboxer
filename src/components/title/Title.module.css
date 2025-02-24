@@ -1,0 +1,10 @@
+.title{
+  font-family: var(--font-title);
+  font-size: 50px;
+  color: var(--color-base-10);
+  margin-bottom: 30px;
+}
+
+.title span{
+  color: var(--color-contrast-01);
+}
