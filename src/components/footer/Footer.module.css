@@ -1,0 +1,24 @@
+.footer{
+  position: relative;
+  background: var(--color-contrast-04);
+  margin-top: 170px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: var(--color-base-01);
+  padding: 20px 0 20px 0;
+}
+
+.footer h3{
+  margin-bottom: 30px;
+}
+
+.footer li{
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.footer p {
+  margin-top: 30px;
+
+}
+

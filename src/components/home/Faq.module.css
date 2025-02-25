@@ -1,0 +1,81 @@
+.faq{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.faq dl{
+  box-shadow: 0 0 4px rgba(0, 0, 0, .4);
+  border-radius: 5px;
+}
+
+.faqItem:not(:last-child)::after{
+  content: "";
+  width: 100%;
+  background: var(--color-contrast-01);
+  opacity: .4;
+  height: 2px;
+  display: block;
+}
+
+.faqItem dt, .faqItem dd{
+  padding: 20px;
+}
+
+.faqItem dt{
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.faqItem dt::before{
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: var(--color-contrast-08);
+  display: block;
+  border-radius: 50px;
+}
+
+.faqItem dt.active::before{
+  background-color: var(--color-contrast-02);
+}
+
+.faqItem dt:hover::before{
+  background-color: var(--color-contrast-02);
+}
+
+.faqItem dt::after{
+  content: '';
+  background: url("/arrow.svg");
+  display: block;
+  width: 30px;
+  height: 30px;
+  transition: .3s;
+}
+
+.faqItem dt.active::after{
+  background: url("/arrow_red.svg");
+  transform: rotate(90deg);
+}
+
+.faqItem dd{
+  background-color: var(--color-contrast-02);
+  color: var(--color-base-01);
+  padding: 0px;
+  opacity: 0;
+  visibility: hidden;
+  height: 0px;
+  transform: translateY(-20px);
+  transition:  all 0.3s ease;
+  border-radius: 0 0 5px 5px;
+}
+
+.faqItem dd.active{
+  padding: 20px;
+  opacity: 1;
+  visibility: visible;
+  height: initial;
+  transform: translateY(0);
+}

@@ -13,7 +13,7 @@ export const Main = () => {
           <Button>Saiba mais</Button>
         </div>
       </main>
-      <Divider />
+      <Divider fill="#E6E6E6" position="bottom" />
     </>
   );
 };
